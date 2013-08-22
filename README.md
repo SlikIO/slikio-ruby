@@ -1,6 +1,6 @@
-# Slikio
+# Slik.IO
 
-TODO: Write a gem description
+This is a ruby gem for Slik.IO - http://slik.io
 
 ## Installation
 
@@ -18,12 +18,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+First, register to http://slik.io
+After you've done that, get the secret api key
+```ruby
+require 'slikio'
+.
+.
+SlikIO.SECRET_API_KEY = 'YOUR_API_KEY'
+```
 
-## Contributing
-
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+### Pushing data to collections
+You can use our API to push data into your collections using:
+```ruby
+Slik.IO.sendData(COLLECTION_ID, data)
+```
+Example:
+```ruby
+SlikIO.sendData("3841841041hc029281", {userId: "123123", email: "user@email.com", action: "planPurchased", cost: 150.0})
+```
