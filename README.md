@@ -27,6 +27,14 @@ require 'slikio'
 SlikIO.SECRET_API_KEY = 'YOUR_API_KEY'
 ```
 
+For rails you can set the api key from an initializer (e.g. config/initializers/slikio.rb)
+```ruby
+# config/initializers/slikio.rb
+require 'slikio'
+.
+.
+SlikIO.SECRET_API_KEY = 'YOUR_API_KEY'
+```
 ### Pushing data to collections
 You can use our API to push data into your collections using:
 ```ruby
