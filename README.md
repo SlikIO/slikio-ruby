@@ -38,7 +38,7 @@ SlikIO.SECRET_API_KEY = 'YOUR_API_KEY'
 ### Pushing data to collections
 You can use our API to push data into your collections using:
 ```ruby
-Slik.IO.sendData(COLLECTION_ID, data)
+SlikIO.sendData(COLLECTION_ID, data)
 ```
 Example:
 ```ruby

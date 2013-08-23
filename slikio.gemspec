@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = Slikio::VERSION
   spec.authors       = ["Daniel Brodsky"]
   spec.email         = ["daniel@slik.io"]
-  spec.description   = "Slik.IO ruby gem"
+  spec.description   = "Slik.IO - Charts for developers"
   spec.summary       = "This is a ruby gem for Slik.IO"
   spec.homepage      = "https://github.com/SlikIO/slikio-ruby"
   spec.license       = "MIT"
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.3"
+  spec.add_development_dependency "bundler", ">= 1.0"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rest-client"
 end
