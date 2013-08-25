@@ -12,7 +12,8 @@ Gem::Specification.new do |spec|
   spec.summary       = "This is a ruby gem for Slik.IO"
   spec.homepage      = "https://github.com/SlikIO/slikio-ruby"
   spec.license       = "MIT"
-
+  spec.post_installation_message = "Congratulations!\nSlik.IO gem successfully installed.\nNow sign up at http://slik.io and start creating charts as easy as it gets"
+ 
   spec.files         = `git ls-files`.split($/)
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
