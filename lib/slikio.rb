@@ -8,11 +8,11 @@ class SlikIO
 
   def self.API_PRIVATE_KEY=(val)
   	@API_PRIVATE_KEY=val
+    @baseUrl = RestClient::Resource.new('https://app.slik.io/api/v1/', :user => val)
   end
 
   def self.sendData(collection_id, data)
   	raise "You must initialize API_PRIVATE_KEY first!" unless @API_PRIVATE_KEY
-  	url = "https://#{@API_PRIVATE_KEY}:@app.slik.io/api/v1/collections/#{collection_id}/data"
-  	RestClient.post(url, :data => data)
+  	@baseUrl["collections/#{collection_id}/data"].post(:data => data)
   end
 end
