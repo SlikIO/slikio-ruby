@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["daniel@slik.io"]
   spec.description   = "Slik.IO - Charts for developers"
   spec.summary       = "This is a ruby gem for Slik.IO"
-  spec.homepage      = "https://github.com/SlikIO/slikio-ruby"
+  spec.homepage      = "http://slik.io"
   spec.license       = "MIT"
   spec.post_install_message = "Congratulations!\nSlik.IO gem successfully installed.\nNow sign up at http://slik.io and start creating charts as easy as it gets"
  
@@ -21,5 +21,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", ">= 1.0"
   spec.add_development_dependency "rake"
-  spec.add_development_dependency "rest-client"
+  spec.add_runtime_dependency "rest-client"
 end
